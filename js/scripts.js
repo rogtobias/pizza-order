@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     var order = new Pizza(inputtedCrust, inputtedTopping);
 
-    $("#paymentDo").text(order.TotalCost());
+    $("#paymentDo").text(order.TotalCost().toFixed(2));
   });
 });
 
