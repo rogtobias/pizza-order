@@ -11,7 +11,7 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Pat's Pizza</h1>
+        <h1>Pat's Pizzaria</h1>
       </div>
     </div>
 
@@ -20,22 +20,59 @@
         <form id="pizzaOrderForm">
           <div class="form-group">
             <p>Please select your crust:</p>
-            <select class="form-control" id="crust">
-              <option value="regular">Regular</option>
-              <option value="large">Large</option>
-              <option value="deepdish">Deep Dish</option>
-            </select>
-
+            <div class="radio">
+              <label>
+                <input type="radio" name="crust" value="regular" checked> 12" Pie
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="crust" value="large"> 20" Pie
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="crust" value="deepdish"> 16" Deep Dish Pie
+              </label>
+            </div>
+            
             <p>Please select toppings:</p>
-            <select class="form-control" id="topping">
-              <option value="1">3 Cheese</option>
-              <option value="2">Pepperoni</option>
-              <option value="3">Hawaiian Style</option>
-              <option value="4">All Meat</option>
-              <option value="5">Vegetarian</option>
-              <option value="6">Pepperoni & Olive</option>
-              <option value="7">Margarita</option>
-            </select>
+            <div class="radio">
+              <label class="pictureRadio">
+                <input type="radio" name="topping" value="1" checked> <img src="img/3cheesepizza.jpeg" alt="3 cheese pizza picture" style="height:50px;"> 3 Cheese
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="topping" value="2"> <img src="img/pepperoni.jpg" alt="pepperoni pizza" style="height:50px;"> Pepperoni
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="topping" value="3"> <img src="img/hawaiian.jpg" alt="hawaiian pizza" style="height:50px;"> Hawaiian Style
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="topping" value="4"> <img src="img/meat.jpg" alt="meat pizza" style="height:50px;"> All Meat
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="topping" value="5"> <img src="img/vegetarian.jpg" alt="vegetarian pizza" style="height:50px;"> Vegetarian
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="topping" value="6"> <img src="img/pepperoniolive.jpg" alt="pepperoni and black olives" style="height:50px;"> Pepperoni & Black Olive
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="topping" value="7"> <img src="img/margherita.jpg" alt="margarita pizza" style="height:50px;"> Margarita
+              </label>
+            </div>
+
             <button type="submit">Submit Order</button>
           </div>
         </form>

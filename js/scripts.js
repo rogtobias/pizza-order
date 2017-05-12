@@ -2,8 +2,8 @@
 $(document).ready(function() {
   $("#pizzaOrderForm").submit(function(event) {
     event.preventDefault();
-    var inputtedCrust = $("#crust").val();
-    var inputtedTopping = $("#topping").val();
+    var inputtedCrust = $("input:radio[name=crust]:checked").val();
+    var inputtedTopping = $("input:radio[name=topping]:checked").val();
 
     var order = new Pizza(inputtedCrust, inputtedTopping);
 
