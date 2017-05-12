@@ -1,3 +1,17 @@
 .jumbotron {
   text-align: center;
 }
+
+.pictureRadio > input {
+  visibility: hidden;
+  position: absolute;
+}
+
+.pictureRadio > input + img {
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.pictureRadio > input:checked + img {
+  border: 2px solid #f00;
+}
