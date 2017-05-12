@@ -12,13 +12,14 @@ $(document).ready(function() {
 });
 
 //--------------------------BACKEND
-function Pizza(crust, toppings) {
+function Pizza(crust, topping) {
   this.crust = crust;
-  this.toppings = topping;
+  this.topping = topping;
 };
 
 Pizza.prototype.TotalCost = function() {
   var payment = 0;
+  debugger;
   if (this.crust === "regular") {
     payment += 10.99;
   }else if (this.crust === "large") {
