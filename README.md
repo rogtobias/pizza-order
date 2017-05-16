@@ -2,7 +2,7 @@
 
 #### _Pizza ordering app that displays the cost of a pizza, May 12, 2017_
 
-#### By _**{List of contributors}**_
+#### By _Roger_
 
 ## Description
 
@@ -15,6 +15,12 @@ _This app will allow an user to select what size crust for a pizza. It will also
 * Click the Clone or Download button
 * Save it to your machine
 * Double click on the index.html
+
+## Specs
+* If the user doesn't select anything and doesn't hit submit, nothing happens.
+* If the user just hit submit. The app will display the price of $12.99; the price for a regular pizza with 3 cheese topping.
+* If the user selects different sizes and toppings upon submit, it will calculate the different prices based upon their selections. For example, the user selects a size of pizza, the app will have a base price based upon that selection. Then when the user selects the topping package, the app will then add the cost to cover that to the total cost. The total cost will then be displayed on the right size of the screen.
+* After the user hits submit and the app runs, the user can input a new pizza and hit submit. A new total cost will be displayed where the old price was located.
 
 ## Known Bugs
 
